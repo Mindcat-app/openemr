@@ -429,3 +429,19 @@ fieldset {
 .about-review-image > #color {
   fill: #083c5d;
 }
+
+/* Keyboard focus is always visible; mouse clicks do not draw it (WCAG 2.4.7). */
+:focus-visible {
+  outline: 2px solid $link-color;
+  outline-offset: 2px;
+}
+
+/* Respect the OS "reduce motion" setting (WCAG 2.3.3). */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0s !important;
+    animation-duration: 0s !important;
+  }
+}
