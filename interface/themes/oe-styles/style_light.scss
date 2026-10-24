@@ -31,6 +31,11 @@ $gray: $gray-400;
 
 $link-color: #1d4ed8; // strong blue for links
 
+// Bootstrap 4's primary (#007bff, 3.98:1) and success (#28a745, 3.13:1) carry white text under
+// the WCAG AA 4.5:1 minimum. These darker shades are 5.84:1 and 5.14:1.
+$blue: #0b5ed7;
+$green: #1e7e34;
+
 $body-bg: #f9fafb;
 $body-color: $gray-900;
 
